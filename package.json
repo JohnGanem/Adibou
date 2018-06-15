@@ -3,13 +3,17 @@
   "version": "0.1.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/nodemon/bin/nodemon.js ./bin/www"
+    "start": "node node_modules/nodemon/bin/nodemon.js ./bin/www",
+    "start_prod": "SET NODE_ENV=production&& node ./bin/www"
   },
   "dependencies": {
+    "bcrypt": "^2.0.1",
+    "connect-mongo": "^2.0.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "^2.6.1",
     "express": "~4.16.0",
+    "express-session": "^1.15.6",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "mongodb": "^3.1.0-beta4",
