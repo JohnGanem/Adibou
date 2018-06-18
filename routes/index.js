@@ -3,6 +3,10 @@ var router = express.Router();
 var User = require('../models/user');
 
 /* GET home page. */
+router.get('/', function (req, res, next) {
+    res.render('index', {'title': 'Accueil'});
+});
+
 router.get('/sign-up', function (req, res, next) {
     res.render('sign-up', {'title': 'Inscription'});
 });
@@ -85,10 +89,6 @@ router.get('/logout', function (req, res, next) {
             }
         });
     }
-});
-
-router.get('/*', function (req, res, next) {
-    res.render('index', {'title': 'Accueil'});
 });
 
 module.exports = router;
