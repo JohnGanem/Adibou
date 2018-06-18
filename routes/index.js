@@ -3,8 +3,12 @@ var router = express.Router();
 var User = require('../models/user');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
-    res.render('index');
+router.get('/sign-up', function (req, res, next) {
+    res.render('sign-up', {'title': 'Inscription'});
+});
+
+router.get('/log-in', function (req, res, next) {
+    res.render('log-in', {'title': 'Connexion'});
 });
 
 //POST route for updating data
@@ -81,6 +85,10 @@ router.get('/logout', function (req, res, next) {
             }
         });
     }
+});
+
+router.get('/*', function (req, res, next) {
+    res.render('index', {'title': 'Accueil'});
 });
 
 module.exports = router;
