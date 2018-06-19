@@ -1,50 +1,70 @@
 <%include layout/head.html%>
 <%include layout/header.html%>
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-center m-auto">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Carousel indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for carousel items -->
-                <div class="carousel-inner">
-                    <div class="item carousel-item active">
-                        <h1>Recycling is the new black</h1>
-                        <p class="testimonial">Si pour toi trier c'est so 2006, on va te montrer comment recycler peut te rapporter gros.</p>
+<!-- Testimonials -->
+<div class="testimonials-container section-container section-container-image-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 testimonial-list">
+                <div role="tabpanel">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="tab1">
+                            <!--<div class="testimonial-image">
+                                <img src="assets/img/testimonials/1.jpg" alt="t1">
+                            </div>-->
+                            <div class="testimonial-text">
+                                <h1>Recycling is the new black</h1>
+                                <p class="testimonial">Si pour toi trier c'est so 2006, on va te montrer comment recycler peut te rapporter gros.</p>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab2">
+                            <!--<div class="testimonial-image">
+                                <img src="assets/img/testimonials/1.jpg" alt="t1">
+                            </div>-->
+                            <div class="testimonial-text">
+                                <h1>Deviens le sage du recyclage</h1>
+                                <p class="testimonial">Chaque déchet recyclé te rapporte des points et te rapproche un peu plus de la reconnaissance éternelle de Nicolas Hulot.</p>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab3">
+                            <!--<div class="testimonial-image">
+                                <img src="assets/img/testimonials/1.jpg" alt="t1">
+                            </div>-->
+                            <div class="testimonial-text">
+                                <h1>Time is money</h1>
+                                <p class="testimonial">Convertis tes points en récompense pour rouler en Lambo sur les champs, mais en autopartage.. et avec du bio carburant. </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item carousel-item">
-                        <h1>Deviens le sage du recyclage</h1>
-                        <p class="testimonial">Chaque déchet recyclé te rapporte des points et te rapproche un peu plus de la reconnaissance éternelle de Nicolas Hulot.</p>
-                    </div>
-                    <div class="item carousel-item">
-                        <h1>Time is money</h1>
-                        <p class="testimonial">Convertis tes points en récompense pour rouler en Lambo sur les champs, mais en autopartage.. et avec du bio carburant. </p>
-                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"></a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"></a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Carousel controls -->
-                <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-                    <i class="fa fa-angle-right"></i>
-                </a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row">
-    <div class="col-12">
-        <a href="something" class="button3">Inscription</a>
-    </div>
-    <div class="col-12">
-        <a href="log-in.html">J'ai déjà un compte</a>
+<div class="container-fluid">
+    <div class="txt-center">
+        <div class="row">
+            <div class="col-12">
+                <a href="sign-up.html" class="button3">INSCRIPTION</a>
+            </div>
+            <div class="col-12">
+                <a href="log-in.html">J'ai déjà un compte</a>
+            </div>
+        </div>
     </div>
 </div>
 
