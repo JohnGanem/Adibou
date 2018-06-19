@@ -2,20 +2,41 @@
 <%include layout/header.html%>
 
 <div class="row">
+    <div class="retour">
+        <a href="/"><img class="img-retour" alt="Flèche de retour" src="img/left-arrow.png" /></a>
+    </div>
     <div class='col-xs-12'>
-        <h3>Inscription</h3>
+
+        <h3>INSCRIPTION</h3>
 
         <div class="login-form">
+            <div class="form-group row">
             <form action="/sign-up" method="post">
-                <input type="text" name="email" placeholder="Nom" required>
-                <input type="text" name="email" placeholder="Prénom" required>
-                <input type="text" name="username" placeholder="Identifiant" required>
-                <input type="password" name="password" placeholder="Mot de passe" required>
-                <input type="password" name="passwordConf" placeholder="Confirmer le mdp" required>
-                <input type="submit" value="VALIDER">
+                <div class="col-sm-12">
+                    <input type="text" name="email" class="champ-inscription" placeholder="Nom" required>
+                </div>
+                <div class="col-sm-12">
+                    <input type="text" name="email" class="champ-inscription" placeholder="Prénom" required>
+                </div>
+                <div class="col-sm-12">
+                    <input type="text" name="username" class="champ-inscription" placeholder="Identifiant" required>
+                </div>
+                <div class="col-sm-12">
+                    <input type="password" name="password" class="champ-inscription" placeholder="Mot de passe" required>
+                </div>
+                <div class="col-sm-12">
+                    <input type="password" name="passwordConf" class="champ-inscription" placeholder="Confirmer le mdp" required>
+                </div>
+                <div class="col-sm-12">
+                    <input type="submit" class="button3 button" value="VALIDER">
+                </div>
             </form>
+            </div>
         </div>
-        <p><a href="#">Pour sauvegarder ta liberté de penser, tu pourras toujours modifier ces paramètres plus tard.</a></p>
+
+        <div class="container-fluid">
+            <p>Pour sauvegarder ta liberté de penser, tu pourras toujours modifier ces paramètres plus tard.</p>
+        </div>
     </div>
 </div>
 

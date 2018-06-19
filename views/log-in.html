@@ -1,17 +1,26 @@
 <%include layout/head.html%>
 <%include layout/header.html%>
 <div class="w3">
+    <div class="retour">
+        <a href="/"><img class="img-retour" alt="Flèche de retour" src="img/left-arrow.png" /></a>
+    </div>
     <div class="signin-form profile">
-        <h3>Login</h3>
+        <h3>LOGIN</h3>
 
         <div class="login-form">
-            <form action="/" method="post">
-                <input type="text" name="logemail" placeholder="E-mail" required="">
-                <input type="password" name="logpassword" placeholder="Password" required="">
-                <div class="tp">
-                    <input type="submit" value="LOGIN NOW">
-                </div>
-            </form>
+            <div class="form-group row">
+                <form action="/" method="post">
+                    <div class="col-sm-12">
+                        <input type="text" name="logemail" class="champ-connexion" placeholder="E-mail" required="">
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="password" name="logpassword" class="champ-connexion" placeholder="Password" required="">
+                    </div>
+                    <div class="tp">
+                        <input type="submit" class="button3 button" value="LOGIN NOW">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div> 
