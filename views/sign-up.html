@@ -1,16 +1,16 @@
 <%include layout/head.html%>
 <%include layout/header.html%>
-
-<div class="row">
+<div class="background">
+    <img class="background" style="height: 100vh" src="img/Background-simple.png"/>
     <div class="retour">
         <a href="/"><img class="img-retour" alt="Flèche de retour" src="img/left-arrow.png" /></a>
     </div>
     <div class='col-xs-12'>
 
-        <h3>INSCRIPTION</h3>
+        <h3 style="margin-top: 30px; font-size: 16px;">INSCRIPTION</h3>
 
         <div class="login-form">
-            <div class="form-group row">
+            <div class="form-group">
             <form action="/sign-up" method="post">
                 <div class="col-sm-12">
                     <input type="text" name="email" class="champ-inscription" placeholder="Nom" required>
@@ -20,13 +20,35 @@
                 </div>
                 <div class="col-sm-12">
                     <input type="text" name="username" class="champ-inscription" placeholder="Identifiant" required>
+                    <p style="color: white; font-size: 8px">* Ton blaze doit avoir au minimum 6 caractères</p>
                 </div>
                 <div class="col-sm-12">
                     <input type="password" name="password" class="champ-inscription" placeholder="Mot de passe" required>
+                    <p style="color: white; font-size: 8px"">* Sois inventif consonnes et voyelles comptent triple</p>
                 </div>
                 <div class="col-sm-12">
                     <input type="password" name="passwordConf" class="champ-inscription" placeholder="Confirmer le mdp" required>
                 </div>
+
+                <p style="position: absolute; color: white; padding-left: 30px;">Activer les notifications</p>
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                    <label class="onoffswitch-label" for="myonoffswitch">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+
+                <p style="position: absolute; color: white; padding-left: 30px;">Activer la géolocalisation</p>
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+                    <label class="onoffswitch-label" for="myonoffswitch1">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                </div>
+
+
                 <div class="col-sm-12">
                     <input type="submit" class="button3 button" value="VALIDER">
                 </div>
@@ -34,8 +56,9 @@
             </div>
         </div>
 
+
         <div class="container-fluid">
-            <p>Pour sauvegarder ta liberté de penser, tu pourras toujours modifier ces paramètres plus tard.</p>
+            <p style="color: white; text-align: left; font-size: 10px;">Pour sauvegarder ta liberté de penser, tu pourras toujours modifier ces paramètres plus tard.</p>
         </div>
     </div>
 </div>

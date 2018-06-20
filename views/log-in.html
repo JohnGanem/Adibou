@@ -1,27 +1,30 @@
 <%include layout/head.html%>
 <%include layout/header.html%>
+<div class="background">
+    <img class="background" src="img/Background-simple.png"/>
 <div class="w3">
     <div class="retour">
         <a href="/"><img class="img-retour" alt="Flèche de retour" src="img/left-arrow.png" /></a>
     </div>
     <div class="signin-form profile">
-        <h3>LOGIN</h3>
+        <img class="logo-blanc" src="img/logo-blanc.png"/>
 
         <div class="login-form">
-            <div class="form-group row">
+            <div class="form-group">
                 <form action="/" method="post">
                     <div class="col-sm-12">
-                        <input type="text" name="logemail" class="champ-connexion" placeholder="E-mail" required="">
+                        <input type="text" name="logemail" class="champ-connexion" placeholder="Identifiant" required="">
                     </div>
                     <div class="col-sm-12">
-                        <input type="password" name="logpassword" class="champ-connexion" placeholder="Password" required="">
+                        <input type="password" name="logpassword" class="champ-connexion" placeholder="Mot de passe" required="">
                     </div>
                     <div class="tp">
-                        <input type="submit" class="button3 button" value="LOGIN NOW">
+                        <input type="submit" class="button3 button" value="VALIDER">
                     </div>
                 </form>
             </div>
         </div>
     </div>
-</div> 
+</div>
+</div>
 <%include layout/footer.html%>
