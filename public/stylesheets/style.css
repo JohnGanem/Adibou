@@ -82,6 +82,69 @@ body > div.container > div > div.col-xs-12 > div.login-form > div > form > div:n
     width: 160px;
 }
 
+li{
+    list-style: none;
+}
+
+#moncercle{
+    background: transparent;
+    border-radius:50%;
+    width:100px;
+    height:100px;
+    margin: auto;
+    border: 1px solid white;
+    line-height: 7.5;
+    margin-bottom: 50px;
+}
+
+.list-home{
+    background-color: #addaf8 !important;
+}
+
+.list-home:focus{
+    background-color: #2993f8 !important;
+}
+
+.size-img-home{
+    width: 160px;
+    height: 150px;
+}
+
+.titre-img-home{
+    color: black;
+}
+
+.menu-bas{
+    box-shadow: 1px 1px 12px #555;
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.left{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+.right{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.circle{
+    background-size: cover;
+    border-radius: 50%;
+    width: 55px;
+    height: 55Px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -5px;
+    margin: auto;
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -100,15 +163,17 @@ body > div.container > div > div.col-xs-12 > div.login-form > div > form > div:n
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 15px;
+    color: white;
     display: block;
     transition: 0.3s;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: black;
 }
 
 /* Position and style the close button (top right corner) */
@@ -290,6 +355,81 @@ body > div.container > div.container-fluid > div > div > div:nth-child(2) > a {
 
 }
 
+/* Second slider*/
+
+.col-center {
+    margin: 0 auto;
+    float: none !important;
+}
+.carousel {
+    margin: 50px auto 0px auto;
+    padding: 0 70px;
+}
+.carousel .item {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+    width: 135px;
+    height: 135px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+.carousel .img-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.carousel .testimonial {
+    padding: 30px 0 10px;
+}
+.carousel .overview {
+    font-style: italic;
+}
+.carousel .overview b {
+    text-transform: uppercase;
+    color: #7AA641;
+}
+.carousel .carousel-control {
+    width: 0px;
+    height: 40px;
+    margin-top: -20px;
+    top: 35%;
+    background: none;
+}
+.carousel-control i {
+    font-size: 20px;
+    position: absolute;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+    bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 1px 3px;
+    border-radius: 50%;
+}
+.carousel-indicators li {
+    background: #999;
+    border-color: transparent;
+    box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {
+    background: #555;
+    box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
 /* Flip Switch*/
 
 .onoffswitch {
@@ -349,3 +489,75 @@ body > div.container > div.container-fluid > div > div > div:nth-child(2) > a {
     right: 0px;
     background-color: #27A1CA;
 }
+
+
+
+
+
+/* carousel */
+#quote-carousel
+{
+    padding: 0 10px 0px 10px;
+    margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+    background: none;
+    color: #222;
+    font-size: 2.3em;
+    text-shadow: none;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+    left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+    right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+    right: 50%;
+    top: auto;
+    bottom: 30px;
+    margin-right: -19px;
+    z-index: 1 !important;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+    background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+    background: #333333;
+}
+#quote-carousel img
+{
+    max-width: 100%;
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+

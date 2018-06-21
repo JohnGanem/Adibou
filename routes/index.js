@@ -15,6 +15,7 @@ router.get('/log-in', function (req, res, next) {
     res.render('log-in', {'title': 'Connexion'});
 });
 
+
 //POST route for updating data
 router.post('/', function (req, res, next) {
     if (req.body.email && req.body.username && req.body.password && req.body.passwordConf) {
@@ -37,7 +38,7 @@ router.post('/', function (req, res, next) {
                 return next(error);
             } else {
                 req.session.userId = user._id;
-                return res.redirect('/profile');
+                return res.redirect('/user');
             }
         });
 
@@ -49,7 +50,7 @@ router.post('/', function (req, res, next) {
                 return next(err);
             } else {
                 req.session.userId = user._id;
-                return res.redirect('/profile');
+                return res.redirect('/user');
             }
         });
     } else {
@@ -60,7 +61,7 @@ router.post('/', function (req, res, next) {
 })
 
 // GET route after registering
-router.get('/profile', function (req, res, next) {
+router.get('/user', function (req, res, next) {
     User.findById(req.session.userId)
             .exec(function (error, user) {
                 if (error) {
@@ -71,10 +72,15 @@ router.get('/profile', function (req, res, next) {
                         err.status = 400;
                         return next(err);
                     } else {
-                        return res.send('<h1>Name: </h1>' + user.username + '<h2>Mail: </h2>' + user.email + '<br><a type="button" href="/logout">Logout</a>')
-                    }
+                        return next();                    }
                 }
             });
+});
+router.get('/user', function (req, res, next) {
+    User.findById(req.session.userId)
+        .exec(function (error, user) {
+    res.render('user', {'title': 'Home', 'name': user.username});
+        });
 });
 
 // GET for logout logout

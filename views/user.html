@@ -1,0 +1,112 @@
+<%include layout/head.html%>
+<%include layout/header.html%>
+
+<nav style="background-color: transparent; border: none; margin-bottom: 0px" class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button style="float: left; border: none" type="button" onclick="openNav();" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span style="background-color: #2993f8" class="icon-bar"></span>
+                <span style="background-color: #2993f8" class="icon-bar"></span>
+                <span style="background-color: #2993f8" class="icon-bar"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div id="mySidenav" class="sidenav" style="background-image: url('img/Background-simple.png'); background-size: cover; z-index: 2">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div id="moncercle">
+            <img class="rounded mx-auto d-block" src="img/photo-camera.png" alt="..."/>
+        </div>
+
+    <aside style="color: white">
+        <a href="#"><img style="padding-right: 10px; color: white" src="img/console.png"/> LE JEU</a>
+        <ul style="text-align: left; padding-left: 80px; color: white">
+            <li>LES GRADES</li>
+            <li>LA BOUTIQUE</li>
+            <li>LES REGLES</li>
+        </ul>
+    </aside>
+    <a href="#"><img style="padding-right: 10px; color: white" src="img/placeholder.png"/>TROUVER UNE BORNE</a>
+    <a href="#"><img style="padding-right: 10px; color: white" src="img/info.png"/>QUI SOMMES NOUS</a>
+    <a href="#"><img style="padding-right: 10px; color: white" src="img/sign-out.png"/>DECONNEXION</a>
+</div>
+
+<div class="container">
+
+    <h1>Bonjour <%= name %>!</h1>
+    <h3>Quel Service allons nous rendre à la planète aujourd'hui ?</h3>
+
+    <div class="container" style="height: 300px">
+        <div class="row">
+            <div class='col-md-offset-2 col-md-8'>
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Bottom Carousel Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#quote-carousel" data-slide-to="1"></li>
+                        <li data-target="#quote-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner">
+
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="" src="img/Pince.png">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p>DETRIPICK</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Quote 2 -->
+                        <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="" src="img/Bouteille.png">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p>SLASH TRASH</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Quote 3 -->
+                        <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3 text-center">
+                                        <img class="" src="img/Eau.png">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <p>ECOVOTE</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Buttons Next/Prev -->
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="menu-bas">
+            <div class="circle" style="background-image: url('img/Background-simple.png')">
+                <img src="img/qr-code.png" style="padding-top: 10px; width: 34px;">
+            </div>
+            <img class="left" src="img/recycle-sign.png"/>
+            <img class="right" src="img/avatar.png"/>
+        </div>
+    </div>
+
+</div>
+
+
+<%include layout/footer.html%>
