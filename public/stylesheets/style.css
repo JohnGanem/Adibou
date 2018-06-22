@@ -145,6 +145,12 @@ li{
     margin: auto;
 }
 
+.contenu-recyclage{
+    color: white;
+    position: absolute;
+    top: 90px;
+}
+
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -531,15 +537,17 @@ body > div.container > div.container-fluid > div > div > div:nth-child(2) > a {
 /* Changes the color of the indicators */
 #quote-carousel .carousel-indicators li
 {
-    background: #c0c0c0;
+    background: #91d8d9;
 }
 #quote-carousel .carousel-indicators .active
 {
-    background: #333333;
+    background: #437cb3;
 }
 #quote-carousel img
 {
     max-width: 100%;
+    width: 200px;
+    height: 180px;
 }
 /* End carousel */
 

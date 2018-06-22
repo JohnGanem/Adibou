@@ -15,6 +15,10 @@ router.get('/log-in', function (req, res, next) {
     res.render('log-in', {'title': 'Connexion'});
 });
 
+router.get('/recyclage', function (req, res, next) {
+    res.render('recyclage', {'title': 'Recyclage'});
+});
+
 
 //POST route for updating data
 router.post('/', function (req, res, next) {
